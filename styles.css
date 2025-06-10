@@ -1,0 +1,334 @@
+
+
+/* Custom CSS for additional styling */
+:root {
+  --primary-green: #3c552d;
+  --light-green: #5b8244;
+  --accent-pink: #ec4899;
+  --warm-beige: #fef3c7;
+  --light-pink:#ca7373;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 50%, #fecaca 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-custom {
+  background-color: var(--primary-green) ;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: var(--warm-beige);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: var(--accent-pink);
+}
+.navbar-custom .navbar-nav .nav-link.active {
+  color: var(--accent-pink);
+}
+
+.navbar-custom .navbar-brand {
+  color: var(--warm-beige);
+  font-weight: 600;
+}
+.navbar-custom .navbar-brand:hover {
+  color: var(--accent-pink);
+}
+.nav-custom .navbar-brand:active{
+    color: var(--accent-pink);
+}
+
+.name-banner {
+  background-color: var(--primary-green);
+  transform: skewX(-12deg);
+  border-radius: 0 50px 50px 0;
+  position: relative;
+  margin-left: -2rem;
+  padding: 2rem 3rem;
+}
+
+.name-banner h1 {
+  transform: skewX(12deg);
+  color: white;
+  font-weight: bold;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.profile-image-container {
+  position: relative;
+}
+/* This circle bg is not responsive */
+
+.profile-circle-bg {
+  width: 450px;
+  height: 450px;
+  background: linear-gradient(135deg, #f9a8d4, #ec4899, #be185d);
+  border-radius: 50%;
+  position: absolute;
+  top: -26px;
+  left: -25px;
+}
+
+.profile-image {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.profile-placeholder {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, #e5e7eb, #d1d5db);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+/* Introduction Section Styles */
+.introduction-section {
+  background: linear-gradient(135deg, #fef3c7 0%, #fef7cd 100%);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.section-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primary-green);
+  margin-bottom: 2rem;
+  line-height: 1.2;
+    text-align: center;
+}
+
+.intro-text {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--primary-green);
+  font-weight: 400;
+}
+
+.intro-text p {
+  margin-bottom: 0;
+}
+
+.ps-card {
+  background-color: var(--primary-green);
+  border-radius: 30px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(6, 95, 70, 0.2);
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+}
+
+.ps-card:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.ps-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.ps-text {
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Education Section Styles */
+.edu-para{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--primary-green);
+    font-weight: 400;
+}
+.clg-card{
+    margin-top: 24px;
+}
+.college-image-container{
+    margin-top: 30px;
+    position: relative;
+}
+.college-circle-bg{
+    width: 600px;
+    height: 300px;
+    background: linear-gradient(135deg, #f9a8d4, #ec4899, #be185d);
+    border-radius: 20%;
+    position: absolute;
+    top: -15px;
+    left: -16px;
+}
+.college-image{
+    width: 570px;
+    height: 270px;
+    border-radius: 20%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+.work-image-container{
+    margin-top: 30px;
+    position: relative;
+}
+.work-circle-bg{
+    width: 600px;
+    height: 300px;
+    background: linear-gradient(135deg, #f9a8d4, #ec4899, #be185d);
+    border-radius: 20%;
+    position: absolute;
+    top: -15px;
+    left: -16px;
+}
+.work-image{
+    width:570px;
+    height: 270px;
+    border-radius: 20%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+.gifs{
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+
+}
+.card-1{
+  background-color: var(--light-pink);  
+}
+.card-2{
+  background-color: var(--primary-green);  
+}
+
+.card-heading{
+  color: white;
+  margin-bottom: var(--bs-card-title-spacer-y);
+  text-align: center;
+}
+.card-text{
+  color: white;
+}
+
+.contact-button-container {
+  margin-top: 2rem;
+  text-align: center;
+
+}
+
+.btn-contact-primary {
+  background-color: var(--light-pink);
+  border-color: var(--light-pink);
+  color: white;
+  font-weight: 600;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  letter-spacing: 0.05em;
+}
+
+.btn-contact-primary:hover {
+  background-color: var(--light-pink);
+  border-color: var(--accent-pink);
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px #ca7373aa;
+}
+.footer-section{
+  background-color: var(--light-pink);
+}
+svg{
+  color: white;
+}
+
+/* 
+@media (max-width: 768px) {
+  .profile-circle-bg,
+  .profile-image,
+  .profile-placeholder {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .name-banner {
+    margin-left: -1rem;
+    padding: 1.5rem 2rem;
+  }
+  
+  .hero-section {
+    padding-bottom: 100px;
+  }
+
+  .intro-heading,
+  .education-heading {
+    font-size: 3rem;
+  }
+
+  .intro-text,
+  .cbse-text {
+    font-size: 1.2rem;
+  }
+
+  .ps-card,
+  .btech-card {
+    margin-top: 2rem;
+    transform: rotate(0deg);
+  }
+
+  .ps-title {
+    font-size: 2rem;
+  }
+
+  .ps-text,
+  .btech-text {
+    font-size: 1.1rem;
+  }
+
+  .college-image {
+    height: 250px;
+    margin-top: 2rem;
+  }
+} */
